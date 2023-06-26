@@ -5,7 +5,7 @@ require('dotenv').config()
 const app =express()
 
 app.get('/', (req, res)=>{
-    res.send("this is basic end point")
+    res.send(`Hello ${process.env.NAME}`)
 })
 
 app.listen(process.env.PORT, ()=>{
